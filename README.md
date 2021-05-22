@@ -20,11 +20,11 @@ Download or copy the ipynb file and run it on Google Colab.
 
 ### Step 2: Install Detectron2
 [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
-#### Method 1: Which I was using (preferred).
-1. ~$ cd Desktop (Change my current working directory to Desktop. You can change to any directory.)
+#### Method 1: Which I was using (recommended).
+1. ~$ cd Desktop (Change my current working directory to Desktop. You can change to any directory or remain the same.)
 2. ~$ git clone https://github.com/facebookresearch/detectron2.git
 3. ~$ python3 -m pip install -e detectron2
-4. ~$ ls (You will now see a folder called "detectron2" appeared in your Desktop.)
+4. ~$ ls (You will now see a folder called "detectron2" appeared in your directory(Desktop here).)
 #### Method 2:
 1. Check gcc version, since version >= 5.4 is needed.
    ~$ gcc --version
@@ -41,7 +41,7 @@ Download or copy the ipynb file and run it on Google Colab.
 ### Step 3: Test our installation
 1. Download a picture for testing purpose.
    ~$ wget http://images.cocodataset.org/val2017/000000439715.jpg -q -O input.jpg
-2. Run main.py 
+2. Run demo.py 
    (Remember to comment line25-"cfg.MODEL.DEVICE='cpu'", if you do have a GPU.)
 3. You can now see the predicted image(result.jpg) on your Desktop, like below:
 
@@ -54,15 +54,37 @@ Since we must register our dataset in Detectron2 in order to use it[see here](ht
 There are few methods to do it.
 ##### Method 1: Convert annotations to COCO format dataset.(fast and simple, highly recommended.)
 - A conversion tool is provided in my Github.
-- After you have done the conversion, we are able to use the function 'register_coco_instances' to register our datasets easily.
+- After you have done the conversion, we are able to use the function 'register_coco_instances' to register our datasets easily(in Step 5).
 ##### Method 2: Write your own function to register the dataset.(Not tested in this tutorial.)
 If you are using labelme, a sample is provided for your reference(register_dataset.py).
 Credit to [Jadezzz])(https://github.com/Jadezzz)
 #### Final: Visualize the images and annotations to check if there is any error.
 
 ### Step 5: Let's start to train!
+Open the file 'train.py' with text editor.
+First, we have to register our datasets.
+[Register a COCO Format Dataset](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html)
+'''
+register_coco_instances("py_dataset_train", {}, "datasets/train.json", "datasets/train/")
+register_coco_instances("py_dataset_test", {}, "datasets/test.json", "datasets/test/")
+'''
+Next, we are going to change the training configurations. 
+[Config References](https://detectron2.readthedocs.io/en/latest/modules/config.html#config-references)
+
+Then, we define our custom trainer instead of using DefaultTrainer. [DefaultTrainer](https://detectron2.readthedocs.io/en/latest/modules/engine.html)
+[Reference](https://github.com/facebookresearch/detectron2/blob/master/projects/DeepLab/train_net.py)
+
+Finally, we can start our training.
+~$ python3 train.py
 
 
+
+### Step 6: Open Tensorboard to display the performance.
+~$ tensorboard --logdir output
  
+
+### Step 7: Evaluate and Inference
+
+### Step 8: Test your model.
 
 Use Detectron2 to do object detection and segmentation on custom dataset.
