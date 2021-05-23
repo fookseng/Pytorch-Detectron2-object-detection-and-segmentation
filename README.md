@@ -86,10 +86,10 @@ First of all, the below is my file structure.
 Open the file 'train.py' with text editor. We are going to modify some settings.
 * Compulsory
    1. Register dataset
-      1. For line 77-78: change the arguements based on the following format\
-      - register_coco_instances("name_of_your_dataset", {}, "json_annotation.json", "path/to/image/dir")\
+      For line 77-78: change the arguements based on the following format
+      `register_coco_instances("name_of_your_dataset", {}, "json_annotation.json", "path/to/image/dir")`
       For my file structure, it will be:
-      - register_coco_instances("py_dataset_train", {}, "datasets/train.json", "datasets/train/")
+      `register_coco_instances("py_dataset_train", {}, "datasets/train.json", "datasets/train/")`
       
 1. The function 'custom_mapper'(line 33-55), apply some transformations to our data. You may edit this function based on your needs. [reference](https://detectron2.readthedocs.io/en/latest/modules/data_transforms.html)
 2. The class 'CocoTrainer'(line 60-71) is a custom class derived from DefaultTrainer. Also, you may edit this class based on your needs. [references1](https://detectron2.readthedocs.io/en/latest/modules/engine.html)
