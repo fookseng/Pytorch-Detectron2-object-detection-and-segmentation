@@ -21,23 +21,25 @@ Download a copy of the .ipynb file, run it on Google Colab.
 ### Step 2: Install Detectron2 
 [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
 #### Method 1: Which I was using (recommended).
-1. Change my current working directory to Desktop. You can change to any directory other or remain the same.\
+1. Change my current working directory to Desktop. You can change to any other directory or remain the same.\
 `~$ cd Desktop `
 2. Clone the repository.\
 ` ~$ git clone https://github.com/facebookresearch/detectron2.git`
-3. Install detectron2
+3. Install detectron2\
 ` ~$ python3 -m pip install -e detectron2`
-4. List the folders in current directory.You will now see a folder called "detectron2".\
+4. List the folders in current directory. You will now see a folder called "detectron2".\
 `~$ ls`
 #### Method 2:
-1. Check gcc version, since version >= 5.4 is needed.
-   ~$ gcc --version
+1. Check gcc version, since version >= 5.4 is needed.\
+   `~$ gcc --version`
 2. Check torch version and GPU availability.
-   ~$ python3
-   >>> import torch, torchvision
-   >>> print(torch.__version__, torch.cuda.is_available())
-   1.8.1+cu102 True
+   '''
+   ~$ python3\
+   >>> import torch, torchvision\
+   >>> print(torch.__version__, torch.cuda.is_available())\
+   1.8.1+cu102 True\
    >>> exit()
+   '''
 3. From [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html), go to     "Install Pre-Built Detectron2 (Linux only)". Then, from the table, choose the correct installation. In my case, I select torch 1.8 and CUDA 10.2(These are what we saw in the above output.).
 4. Copy the command and run it on your terminal.
    ~$ python3 python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.8/index.html
