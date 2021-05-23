@@ -76,9 +76,22 @@ Credit to [Jadezzz](https://github.com/Jadezzz)
    3. To use the tool(convert labelme annotation to COCO Format) mentioned above, we must have both the images and annotations in the same folder. Hence, we create a new folder named 'coco', then, copy all the images and annotations to the folder 'coco'.
    4. Run the tool to do the conversion (using the folder 'coco').
    5. Now, we have obtained the COCO Format annotation file(sample.json). You may delete the folder 'coco'.
+   * You might want to split your data into 2 sets(Train Set, Valid Set) or 3 sets(Test Set, Valid Set, Train Set). Then, repeat the above process.
 
 ### Step 5: Let's start to train!
-Open the file 'train.py' with text editor.
+First of all, the below is my file structure.
+...
+...
+Open the file 'train.py' with text editor. We are going to modify some settings.
+* Compulsory
+   1. Register dataset
+      1. For line 77-78: change the arguements based on the following format\
+      - register_coco_instances("name_of_your_dataset", {}, "json_annotation.json", "path/to/image/dir")\
+      For my file structure, it will be:
+      - register_coco_instances("py_dataset_train", {}, "datasets/train.json", "datasets/train/")
+      
+1. The function 'custom_mapper'(line 33-55), apply some transformations to our data. You may edit this function based on your needs. [reference](https://detectron2.readthedocs.io/en/latest/modules/data_transforms.html)
+2. The class 'CocoTrainer'(line 60-71) is a custom class derived from DefaultTrainer. Also, you may edit this class based on your needs. [references1](https://detectron2.readthedocs.io/en/latest/modules/engine.html)
 First, we have to register our datasets.
 [Register a COCO Format Dataset](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html)
 '''
