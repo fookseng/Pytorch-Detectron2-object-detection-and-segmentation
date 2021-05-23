@@ -132,7 +132,7 @@ Evaluated information will be printed on the terminal.\
       - 'detection_result/': is the directory to save the output images. You need to create this directory before executing the command.
       - 'MODEL.WEIGHTS output/model_final.pth': is the path to our trained model. Normally is located at the folder 'output'.
       - 'MODEL.DEVICE cuda': You can choose either to use GPU or CPU. If CPU, it will be 'MODEL.DEVICE cpu'.
-      - Below are some output images:
+      - Below are some output images stored in the folder 'detection_result':
       ![image1](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res1.jpg)
       ![image2](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res2.jpg)
       ![image3](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res3.jpg)
