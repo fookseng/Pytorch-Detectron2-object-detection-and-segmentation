@@ -51,7 +51,3 @@ v = Visualizer(im[:, :, ::-1], metadata = dataset_metadata, scale=1.2)
 out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
 cv2.imshow('res',out.get_image()[:, :, ::-1])
 cv2.waitKey(0)
-
-'''
-python3 demo.py --config-file /home/lemon/Desktop/config.yml --input /home/lemon/Desktop/datasets/test/1_0.jpg /home/lemon/Desktop/datasets/test/2_0.jpg /home/lemon/Desktop/datasets/test/3_0.jpg --opts MODEL.DEVICE cpu MODEL.WEIGHTS /home/lemon/Desktop/output/model_final.pth
-'''
