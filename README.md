@@ -66,8 +66,9 @@ There are few methods to do it.
 ##### Method 1: Convert annotations to COCO format dataset.(Fast and simple, highly recommended.)
 - A conversion tool is provided in my [Github](https://github.com/fookseng/annotation-converter).
 - After you have done the conversion, we are able to use the function 'register_coco_instances' to register our datasets easily (in Step 5).
+- A sample output file from the conversion can be found in resources/sample/sample.json [sample](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/sample/sample.json)
 ##### Method 2: Write your own function to register the dataset.(Not tested in this tutorial.)
-If you are using labelme, a sample is provided for your reference(register_dataset.py).
+If you are using labelme, a sample code is provided for your reference(register_dataset.py).
 Credit to [Jadezzz](https://github.com/Jadezzz)
 #### Final: Visualize the images and annotations to check if there is any error.
 
