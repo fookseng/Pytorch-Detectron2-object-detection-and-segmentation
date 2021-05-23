@@ -1,7 +1,7 @@
 # Object Detection and Segmentation
 # A Step-by-step guide to Pytorch Detectron2 with custom dataset
 # Environments:
-1. Google Colab (strongly recommended, ipynb file is provided.)
+1. Google Colab (strongly recommended, .ipynb file is provided.)
 2. Ubuntu (We will use in this tutorial.)
 
 ## For Google Colab:
@@ -21,7 +21,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 ### Step 2: Install Detectron2 
 [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
 #### Method 1: Which I was using (recommended).
-1. Change my current working directory to Desktop. You can change to any other directory or remain the same.\
+1. Change the current working directory to Desktop. You can change to any other directory or remain the same.\
 `~$ cd Desktop `
 2. Clone the repository.\
 ` ~$ git clone https://github.com/facebookresearch/detectron2.git`
@@ -38,10 +38,10 @@ Download a copy of the .ipynb file, run it on Google Colab.
    ~$ python3
    >>> import torch, torchvision
    >>> print(torch.__version__, torch.cuda.is_available())
-   1.8.1+cu102 True
+   **1.8.1+cu102 True**
    >>> exit()
    ```
-3. Go to [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html), locate     "Install Pre-Built Detectron2 (Linux only)". Then, from the table, choose the correct version. In our case, we select torch 1.8 and CUDA 10.2. (These are what we saw in the above output)
+3. Go to [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html), locate     "**Install Pre-Built Detectron2 (Linux only)**". Then, from the table, choose the correct version. In our case, we select **torch 1.8** and **CUDA 10.2**. (These are what we saw in the above output)
 4. Copy the command and run it on your terminal.\
    `~$ python3 python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.8/index.html`
 
