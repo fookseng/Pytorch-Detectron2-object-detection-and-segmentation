@@ -117,7 +117,7 @@ Make sure you are in the same directory with the folder 'output'.\
 _You might need to install tensorboard before you can use it. Check online tutorial for the installation of Tensorboard._
  --------------------------------------------------------------------------------------------------------------------
 ### Step 7: Evaluate
-Evaluation information will be printed on the terminal.\
+Evaluated information will be printed on the terminal.\
 ![evaluation](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/evaluate.png)
 --------------------------------------------------------------------------------------------------------------------
 ### Step 8: Inference-Test your model.
