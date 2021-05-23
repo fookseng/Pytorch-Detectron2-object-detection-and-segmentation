@@ -86,8 +86,8 @@ First of all, the below is my file structure.
 Open the file 'train.py' with text editor. We are going to modify some settings.
 * Compulsory
    1. Register dataset\
-      For line 77-78: change the arguements based on the following format
-      `register_coco_instances("name_of_your_dataset", {}, "json_annotation.json", "path/to/image/dir")`
+      For line 77-78: change the arguements based on the following format.
+      `register_coco_instances("name_of_your_dataset", {}, "json_annotation.json", "path/to/image/dir")`\
       For my file structure, it will be:
       `register_coco_instances("py_dataset_train", {}, "datasets/train.json", "datasets/train/")`
       
