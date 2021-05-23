@@ -57,18 +57,18 @@ Download a copy of the .ipynb file, run it on Google Colab.
 
 ### Step 4: Prepare our dataset
 #### First: Label your images
-We use the tool [labelme](https://github.com/wkentaro/labelme) to label our images.
-An example for the image and corresponding annotation can be found in resources/sample [here](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/tree/main/resources/sample).\
-There are many tutorials guiding you to use labelme, you may check them out.
+* We use the tool [labelme](https://github.com/wkentaro/labelme) to label our images.
+An example for the image and corresponding annotation can be found in resources/sample [here](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/tree/main/resources/sample).
+* There are many tutorials guiding you to use labelme, you may check them out.
 #### Second: Register your dataset
-Since we must register our dataset in Detectron2 in order to use it [see here](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html).
+* Since we must register our dataset in Detectron2 in order to use it [see here](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html).
 There are few methods to do it.
-##### Method 1: Convert annotations to COCO format dataset.(fast and simple, highly recommended.)
-- A conversion tool is provided in my Github.
-- After you have done the conversion, we are able to use the function 'register_coco_instances' to register our datasets easily(in Step 5).
+##### Method 1: Convert annotations to COCO format dataset.(Fast and simple, highly recommended.)
+- A conversion tool is provided in my [Github](https://github.com/fookseng/annotation-converter).
+- After you have done the conversion, we are able to use the function 'register_coco_instances' to register our datasets easily (in Step 5).
 ##### Method 2: Write your own function to register the dataset.(Not tested in this tutorial.)
 If you are using labelme, a sample is provided for your reference(register_dataset.py).
-Credit to [Jadezzz])(https://github.com/Jadezzz)
+Credit to [Jadezzz](https://github.com/Jadezzz)
 #### Final: Visualize the images and annotations to check if there is any error.
 
 ### Step 5: Let's start to train!
