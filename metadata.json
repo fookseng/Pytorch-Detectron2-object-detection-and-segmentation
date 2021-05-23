@@ -1,0 +1,1 @@
+{"name": "py_dataset_train", "json_file": "datasets/train.json", "image_root": "datasets/train/", "evaluator_type": "coco", "thing_classes": ["head", "shrimp", "tail"], "thing_dataset_id_to_contiguous_id": {"0": 0, "1": 1, "2": 2}}
