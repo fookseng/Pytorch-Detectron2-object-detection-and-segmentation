@@ -1,21 +1,21 @@
 # Object Detection and Segmentation
-# A Step-by-step guide to Pytorch Detectron2 with custom datasets
+# A Step-by-step guide to Pytorch Detectron2 with custom dataset
 # Environments:
 1. Google Colab (strongly recommended, ipynb file is provided.)
-2. Ubuntu (what we will be using here.)
+2. Ubuntu (We will use in this tutorial.)
 
 ## For Google Colab:
-Download or copy the ipynb file and run it on Google Colab.
+Download a copy of the .ipynb file, run it on Google Colab.
 
 ## For Ubuntu:
 ### Step 1: Dealing with Anaconda
--Install Anaconda, since we will use Anaconda to manage environments.
+* Install Anaconda, since we will use Anaconda to manage environments.
 [How to install Anaconda](https://docs.anaconda.com/anaconda/install/linux/)
--Open your terminal, and create a new Python environment with the name 'detectron2'(Any name should be fine).
-~$ conda create -n detectron2
--Activate the environment we have created.
-~$ conda activate detectron2
--If the above steps are successful, you will see something similar to this:
+* Open your terminal, create a new Python environment. ('We use the name'detectron2 here, any name should be fine).
+`~$ conda create -n detectron2`
+* Activate the environment we have created.
+`~$ conda activate detectron2`
+* If the above steps are successful, you will see something similar to this:
 (detectron2) lemon@lemon-System-Product-Name:~$  * Note that "(detectron2)" has appeared. *
 
 ### Step 2: Install Detectron2
