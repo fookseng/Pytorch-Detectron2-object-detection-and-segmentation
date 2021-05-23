@@ -104,7 +104,7 @@ Open the file 'train.py' with text editor. We are going to modify some settings.
 Finally, let's start our training. Run the file 'train.py'.\
 `~$ python3 train.py`
 
-_You will first see 3 images displayed one by one(press 'space' to skip to next one). This is to confirm we have registered our dataset correctly. After the 3rd image displayed, the training process will start._
+_You will first see 3 images displayed one by one(press 'space' to skip to the next one). This is to confirm we have registered our dataset correctly. After the 3rd image displayed, the training process will start._\
 ![training]()
 
 
