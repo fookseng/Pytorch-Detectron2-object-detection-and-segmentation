@@ -72,12 +72,12 @@ If you are using labelme, a sample code is provided for your reference(register_
 Credit to [Jadezzz](https://github.com/Jadezzz)
 * #### Conclusion: In Step 4, we label our images using labelme. Then, we convert all the annotations to COCO Format(sample.json). What we are doing:
    1. Collect all your images, put them all together in a folder named 'img'.
-   2. Label all the images using labelme, save the annotations in another folder named 'label'
+   2. Label all the images using labelme, save the annotations in another folder named 'label'.
    3. To use the tool(convert labelme annotation to COCO Format) mentioned above, we must have both the images and annotations in the same folder. Hence, we create a new folder named 'coco', then, copy all the images and annotations to the folder 'coco'.
    4. Run the tool to do the conversion (on the folder 'coco').
    5. Now, we have obtained the COCO Format annotation file(sample.json). You may delete the folder 'coco'.
    
-   * You might want to split your data into 2 sets(Train Set, Valid Set) or 3 sets(Test Set, Valid Set, Train Set). Then, repeat the above process.
+   * You might want to split your data into 2 sets(Train Set, Valid Set) or 3 sets(Test Set, Valid Set, Train Set). Repeat the above process for each set.
 --------------------------------------------------------------------------------------------------------------------
 ### Step 5: Let's start to train!
 First of all, below is my file structure.
