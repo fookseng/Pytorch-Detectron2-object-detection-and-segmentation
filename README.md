@@ -115,10 +115,29 @@ Make sure you are in the same directory with the folder 'output'.\
 ![tensor2](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/tensorboard2.png)
 _You might have to install tensorboard before you can use it. Check online tutorial for the installation of Tensorboard._
  
-### Step 7: Evaluate and Inference
+### Step 7: Evaluate
 Evaluation information will be printed on the terminal.\
 ![evaluation](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/evaluate.png)
 
-### Step 8: Test your model.
+### Step 8: Inference-Test your model.
+* I am going to use the code provided in [Github](https://github.com/facebookresearch/detectron2/tree/master/demo) to do inference. Read this for more information.
+* I have made some minor changes in 'predictor.py' and 'demo.py'.
+* You should note that after Step 5, we have created some files('config.yml', 'metadata.json', 'output/model_final.pth') in the same directory as 'train.py'.
+* We will need those files to do inference.
+1. Inference on images
+   - Run the following command in terminal. Remember to create the output directory before running.
+      `python3 demo.py --input test/*.jpg --output detection_result/ --opts MODEL.WEIGHTS output/model_final.pth MODEL.DEVICE cuda`
+      - 'test/*.jpg': is the directory where I put my test images.
+      - 'detection_result/': is the directory to save the output images. You need to create this directory your own.
+      - 'MODEL.WEIGHTS output/model_final.pth': is the path to our trained model. Normally is located at the folder 'output'.
+      - 'MODEL.DEVICE cuda': You can choose either to use GPU or CPU. If CPU, it will be 'MODEL.DEVICE cpu'.
+      - Below are some output images:
+      ![image1](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res1.jpg)
+      ![image2](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res2.jpg)
+      ![image3](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res3.jpg)
+2. Inference on video
+3. Inference on webcam
+   - I did not try this.
+
 
 Use Detectron2 to do object detection and segmentation on custom dataset.
