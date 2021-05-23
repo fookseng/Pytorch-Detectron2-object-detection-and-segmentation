@@ -77,7 +77,7 @@ Credit to [Jadezzz](https://github.com/Jadezzz)
    4. Run the tool to do the conversion (on the folder 'coco').
    5. Now, we have obtained the COCO Format annotation file(sample.json). You may delete the folder 'coco'.
    
-   * You might want to split your data into 2 sets(Train Set, Valid Set) or 3 sets(Test Set, Valid Set, Train Set). Repeat the above process for each set.
+   * You might want to split your data into 2 sets(Train Set, Valid Set) or 3 sets(Test Set, Valid Set, Train Set). Repeat the above processes for each set.
 --------------------------------------------------------------------------------------------------------------------
 ### Step 5: Let's start to train!
 First of all, below is my file structure.
