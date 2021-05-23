@@ -17,7 +17,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 `~$ conda activate detectron2`
 * If the above steps are successful, you will see something similar to this:\
 `(detectron2) lemon@lemon-System-Product-Name:~$`
-
+--------------------------------------------------------------------------------------------------------------------
 ### Step 2: Install Detectron2 
 [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
 #### Method 1: Which I was using (recommended).
@@ -44,7 +44,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 3. Go to [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html), locate     "**Install Pre-Built Detectron2 (Linux only)**". Then, from the table, choose the correct version. In our case, we select **torch 1.8** and **CUDA 10.2**. (These are what we saw in the above output)
 4. Copy the command and run it on your terminal.\
    `~$ python3 python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.8/index.html`
-
+--------------------------------------------------------------------------------------------------------------------
 ### Step 3: Test our installation
 1. Download a picture for testing purpose.\
    `~$ wget http://images.cocodataset.org/val2017/000000439715.jpg -q -O input.jpg`
@@ -54,7 +54,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 3. You will now see the original and predicted images like below. Press 'space' to terminate the program.
 ![Original image](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/input.jpg)
 ![Predicted image](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/result.jpg)
-
+--------------------------------------------------------------------------------------------------------------------
 ### Step 4: Prepare our dataset
 #### First: Label your images
 * We use the tool [labelme](https://github.com/wkentaro/labelme) to label our images.
@@ -78,7 +78,7 @@ Credit to [Jadezzz](https://github.com/Jadezzz)
    5. Now, we have obtained the COCO Format annotation file(sample.json). You may delete the folder 'coco'.
    
    * You might want to split your data into 2 sets(Train Set, Valid Set) or 3 sets(Test Set, Valid Set, Train Set). Then, repeat the above process.
-
+--------------------------------------------------------------------------------------------------------------------
 ### Step 5: Let's start to train!
 First of all, the below is my file structure.
 ...
@@ -106,7 +106,7 @@ Save the file, and now, let's start our training. Run the file 'train.py'.\
 
 _You will first see 3 images displayed one by one(press 'space' to skip to the next one). This is to confirm we have registered our dataset correctly. After the 3rd image displayed, the training process will start._\
 ![training](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/train.png)
-
+--------------------------------------------------------------------------------------------------------------------
 ### Step 6: Open Tensorboard to display the performance.
 First, open a new terminal, type the following command.\
 Make sure you are in the same directory with the folder 'output'.\
@@ -114,11 +114,11 @@ Make sure you are in the same directory with the folder 'output'.\
 ![tensor1](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/tensorboard1.png)
 ![tensor2](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/tensorboard2.png)
 _You might have to install tensorboard before you can use it. Check online tutorial for the installation of Tensorboard._
- 
+ --------------------------------------------------------------------------------------------------------------------
 ### Step 7: Evaluate
 Evaluation information will be printed on the terminal.\
 ![evaluation](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/evaluate.png)
-
+--------------------------------------------------------------------------------------------------------------------
 ### Step 8: Inference-Test your model.
 * I am going to use the code provided in [Github](https://github.com/facebookresearch/detectron2/tree/master/demo) to do inference. Read this for more information.
 * I have made some minor changes in 'predictor.py' and 'demo.py'.
