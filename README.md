@@ -109,6 +109,7 @@ _You will first see 3 images displayed one by one(press 'space' to skip to the n
 
 ### Step 6: Open Tensorboard to display the performance.
 First, open a new terminal, type the following command.\
+Make sure you are in the same directory with the folder 'output'.\
 `~$ tensorboard --logdir output`
 ![tensor1](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/tensorboard1.png)
 ![tensor2](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/tensorboard2.png)
