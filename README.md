@@ -28,7 +28,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 3. Install detectron2\
 ` ~$ python3 -m pip install -e detectron2`
 4. List the folders in current directory. You will now see a folder called "detectron2".\
-`~$ ls`
+`~$ ls`\
 ![Image of terminal](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/step2.png)
 #### Method 2:
 1. Check gcc version, since version >= 5.4 is needed.\
