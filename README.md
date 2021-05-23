@@ -96,19 +96,8 @@ Open the file 'train.py' with text editor. We are going to modify some settings.
       - learning rate
       - [more](https://detectron2.readthedocs.io/en/latest/modules/config.html)
       
-1. The function 'custom_mapper'(line 33-55), apply some transformations to our data. You may edit this function based on your needs. [reference](https://detectron2.readthedocs.io/en/latest/modules/data_transforms.html)
-2. The class 'CocoTrainer'(line 60-71) is a custom class derived from DefaultTrainer. Also, you may edit this class based on your needs. [references1](https://detectron2.readthedocs.io/en/latest/modules/engine.html)
-First, we have to register our datasets.
-[Register a COCO Format Dataset](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html)
-'''
-register_coco_instances("py_dataset_train", {}, "datasets/train.json", "datasets/train/")
-register_coco_instances("py_dataset_test", {}, "datasets/test.json", "datasets/test/")
-'''
-Next, we are going to change the training configurations. 
-[Config References](https://detectron2.readthedocs.io/en/latest/modules/config.html#config-references)
-
-Then, we define our custom trainer instead of using DefaultTrainer. [DefaultTrainer](https://detectron2.readthedocs.io/en/latest/modules/engine.html)
-[Reference](https://github.com/facebookresearch/detectron2/blob/master/projects/DeepLab/train_net.py)
+1. The function 'custom_mapper', apply some transformations to our data. You may edit this function based on your needs.
+2. The class 'CocoTrainer' is a custom Trainer derived from DefaultTrainer. Also, you may edit this class based on your needs.[Reference](https://github.com/facebookresearch/detectron2/blob/master/projects/DeepLab/train_net.py)
 
 Finally, we can start our training.
 ~$ python3 train.py
