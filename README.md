@@ -41,14 +41,15 @@ Download a copy of the .ipynb file, run it on Google Colab.
    >>> exit()
    ```
 3. Go to [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html), locate     "Install Pre-Built Detectron2 (Linux only)". Then, from the table, choose the correct version. In our case, we select torch 1.8 and CUDA 10.2. (These are what we saw in the above output)
-4. Copy the command and run it on your terminal.
+4. Copy the command and run it on your terminal.\
    `~$ python3 python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.8/index.html`
 
 ### Step 3: Test our installation
-1. Download a picture for testing purpose.
-   ~$ wget http://images.cocodataset.org/val2017/000000439715.jpg -q -O input.jpg
-2. Run demo.py 
-   (Remember to comment line25-"cfg.MODEL.DEVICE='cpu'", if you do have a GPU.)
+1. Download a picture for testing purpose.\
+   `~$ wget http://images.cocodataset.org/val2017/000000439715.jpg -q -O input.jpg`
+2. Run test_installation.py\
+*(Please open the file with text editor and comment line25- `cfg.MODEL.DEVICE='cpu' `, if you do have a GPU available.)*\
+` ~$ python3 test_installation.py`
 3. You can now see the predicted image(result.jpg) on your Desktop, like below:
 
 ### Step 4: Prepare our datasets
