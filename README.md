@@ -101,13 +101,11 @@ Open the file 'train.py' with text editor. We are going to modify some settings.
 
 * #### Conclusion: You can keep everything unchanged, but MUST change all the file's path, unless you follow my file structure exactly the same.
 
-Finally, let's start our training. Run the file 'train.py'.\
+Save the file, and now, let's start our training. Run the file 'train.py'.\
 `~$ python3 train.py`
 
 _You will first see 3 images displayed one by one(press 'space' to skip to the next one). This is to confirm we have registered our dataset correctly. After the 3rd image displayed, the training process will start._\
-![training]()
-
-
+![training](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/train.png)
 
 ### Step 6: Open Tensorboard to display the performance.
 ~$ tensorboard --logdir output
