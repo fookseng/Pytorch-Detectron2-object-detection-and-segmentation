@@ -87,6 +87,14 @@ Open the file 'train.py' with text editor. We are going to modify some settings.
 * Compulsory
    1. From line 31-70, you can see a block of code like below image. Read the comment for each variable, then modify them. The comment should be clear enough for you to understand.
    ![modify](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/code_block.png)
+* Optional
+   1. You may go through the code and modify other configurations based on your needs.
+      - Data augmentation [documentation](https://detectron2.readthedocs.io/en/latest/modules/data_transforms.html)
+      - Custom Trainer
+      - config-file
+      - model
+      - learning rate
+      - [more](https://detectron2.readthedocs.io/en/latest/modules/config.html)
       
 1. The function 'custom_mapper'(line 33-55), apply some transformations to our data. You may edit this function based on your needs. [reference](https://detectron2.readthedocs.io/en/latest/modules/data_transforms.html)
 2. The class 'CocoTrainer'(line 60-71) is a custom class derived from DefaultTrainer. Also, you may edit this class based on your needs. [references1](https://detectron2.readthedocs.io/en/latest/modules/engine.html)
