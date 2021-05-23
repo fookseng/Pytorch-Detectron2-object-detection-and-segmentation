@@ -58,7 +58,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 ### Step 4: Prepare our dataset
 #### First: Label your images
 We use the tool [labelme](https://github.com/wkentaro/labelme) to label our images.
-An example for the image and corresponding annotation can be found in /resources/sample.
+An example for the image and corresponding annotation can be found in /resources/sample [here](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/tree/main/resources/sample).
 #### Second: Register your datasets
 Since we must register our dataset in Detectron2 in order to use it[see here](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html).
 There are few methods to do it.
