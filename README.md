@@ -113,7 +113,7 @@ Make sure you are in the same directory with the folder 'output'.\
 `~$ tensorboard --logdir output`
 ![tensor1](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/tensorboard1.png)
 ![tensor2](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/tensorboard2.png)
-_You might have to install tensorboard before you can use it. Check online tutorial for the installation of Tensorboard._
+_You might need to install tensorboard before you can use it. Check online tutorial for the installation of Tensorboard._
  --------------------------------------------------------------------------------------------------------------------
 ### Step 7: Evaluate
 Evaluation information will be printed on the terminal.\
