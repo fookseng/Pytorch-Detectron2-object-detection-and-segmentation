@@ -81,7 +81,9 @@ Credit to [Jadezzz](https://github.com/Jadezzz)
 --------------------------------------------------------------------------------------------------------------------
 ### Step 5: Let's start to train!
 First of all, the below is my file structure.\
+--------------------------------------------------------------------------------------------------------------------
 ![structure](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/file_strucutre.png)\
+--------------------------------------------------------------------------------------------------------------------
 Open the file 'train.py' with text editor. We are going to modify some settings.
 * Compulsory
    1. From line 31-70, you can see a block of code like below image. Read the comment for each variable, then modify them. The comment should be clear enough for you to understand.
