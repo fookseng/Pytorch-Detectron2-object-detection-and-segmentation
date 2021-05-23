@@ -8,7 +8,7 @@
 Download a copy of the .ipynb file, run it on Google Colab.
 
 ## For Ubuntu:
-### Step 1: Dealing with Anaconda
+### Step 1: Dealing with Anaconda (You may skip step 1, Anaconda is NOT compulsory.)
 * Install Anaconda, since we will use Anaconda to manage environments.
 [How to install Anaconda](https://docs.anaconda.com/anaconda/install/linux/)
 * Open your terminal, create a new Python environment. ('We use the name'detectron2 here, any name should be fine).
