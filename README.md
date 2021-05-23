@@ -61,7 +61,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 An example for the image and corresponding annotation can be found in resources/sample [here](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/tree/main/resources/sample).
 * There are many tutorials guiding you to use labelme, you may check them out.
 #### Second: Register your dataset
-* Since we must register our dataset in Detectron2 in order to use it [see here](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html).
+* Since we must register our dataset in Detectron2 in order to use it [Documentation](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html).
 There are few methods to do it.
 ##### Method 1: Convert annotations to COCO Format dataset.(Fast and simple, highly recommended.)
 - A conversion tool is provided in my [Github](https://github.com/fookseng/annotation-converter).
