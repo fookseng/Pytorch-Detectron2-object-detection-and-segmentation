@@ -29,6 +29,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 ` ~$ python3 -m pip install -e detectron2`
 4. List the folders in current directory. You will now see a folder called "detectron2".\
 `~$ ls`
+![Image of terminal](https://octodex.github.com/images/yaktocat.png)
 #### Method 2:
 1. Check gcc version, since version >= 5.4 is needed.\
    `~$ gcc --version`
@@ -47,10 +48,12 @@ Download a copy of the .ipynb file, run it on Google Colab.
 ### Step 3: Test our installation
 1. Download a picture for testing purpose.\
    `~$ wget http://images.cocodataset.org/val2017/000000439715.jpg -q -O input.jpg`
-2. Run test_installation.py\
-*(Please open the file with text editor and comment line25- `cfg.MODEL.DEVICE='cpu' `, if you do have a GPU available.)*\
+2. Run test_installation.py
+   * _Please open the file(test_installation.py) with text editor, comment line25 `cfg.MODEL.DEVICE='cpu' `, if you do have a GPU available._\
 ` ~$ python3 test_installation.py`
-3. You can now see the predicted image(result.jpg) on your Desktop, like below:
+3. You will now see the original and predicted images like below. Press 'space' to terminate the program.
+![Original image](https://octodex.github.com/images/yaktocat.png)
+![Predicted image](https://octodex.github.com/images/yaktocat.png)
 
 ### Step 4: Prepare our datasets
 #### First: Label your images
