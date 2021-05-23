@@ -38,7 +38,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
    ~$ python3
    >>> import torch, torchvision
    >>> print(torch.__version__, torch.cuda.is_available())
-   **1.8.1+cu102 True**
+   1.8.1+cu102 True
    >>> exit()
    ```
 3. Go to [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html), locate     "**Install Pre-Built Detectron2 (Linux only)**". Then, from the table, choose the correct version. In our case, we select **torch 1.8** and **CUDA 10.2**. (These are what we saw in the above output)
