@@ -99,8 +99,10 @@ Open the file 'train.py' with text editor. We are going to modify some settings.
 1. The function 'custom_mapper', apply some transformations to our data. You may edit this function based on your needs.
 2. The class 'CocoTrainer' is a custom Trainer derived from DefaultTrainer. Also, you may edit this class based on your needs.[Reference](https://github.com/facebookresearch/detectron2/blob/master/projects/DeepLab/train_net.py)
 
-Finally, we can start our training.
-~$ python3 train.py
+* #### Conclusion: You can keep everything unchanged, but MUST change all the file's path, unless you follow my file structure exactly the same.
+
+Finally, let's start our training. Run the file 'train.py'.
+`~$ python3 train.py`
 
 
 
