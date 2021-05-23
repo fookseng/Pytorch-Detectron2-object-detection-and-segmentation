@@ -52,13 +52,13 @@ Download a copy of the .ipynb file, run it on Google Colab.
    _Please open the file(test_installation.py) with text editor, comment line25 `cfg.MODEL.DEVICE='cpu' `, if you do have a GPU available._\
 ` ~$ python3 test_installation.py`
 3. You will now see the original and predicted images like below. Press 'space' to terminate the program.
-![Original image](https://octodex.github.com/images/yaktocat.png)
-![Predicted image](https://octodex.github.com/images/yaktocat.png)
+![Original image](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/input.jpg)
+![Predicted image](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/result.jpg)
 
-### Step 4: Prepare our datasets
+### Step 4: Prepare our dataset
 #### First: Label your images
 We use the tool [labelme](https://github.com/wkentaro/labelme) to label our images.
-An example for the image and annotation can be found here.
+An example for the image and corresponding annotation can be found in /resources/sample.
 #### Second: Register your datasets
 Since we must register our dataset in Detectron2 in order to use it[see here](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html).
 There are few methods to do it.
