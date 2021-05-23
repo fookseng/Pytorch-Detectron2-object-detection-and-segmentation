@@ -136,8 +136,9 @@ Evaluation information will be printed on the terminal.\
       ![image2](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res2.jpg)
       ![image3](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res3.jpg)
 2. Inference on video
-3. Inference on webcam
+   - Run the following command in terminal.
+   `python3 demo.py --video-input input.mp4 --output detection_result/ --opts MODEL.WEIGHTS output/model_final.pth `
+4. Inference on webcam
    - I did not try this.
 
-
-Use Detectron2 to do object detection and segmentation on custom dataset.
+# Thank you, and GOOD LUCK :)
