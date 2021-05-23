@@ -76,6 +76,7 @@ Credit to [Jadezzz](https://github.com/Jadezzz)
    3. To use the tool(convert labelme annotation to COCO Format) mentioned above, we must have both the images and annotations in the same folder. Hence, we create a new folder named 'coco', then, copy all the images and annotations to the folder 'coco'.
    4. Run the tool to do the conversion (using the folder 'coco').
    5. Now, we have obtained the COCO Format annotation file(sample.json). You may delete the folder 'coco'.
+   
    * You might want to split your data into 2 sets(Train Set, Valid Set) or 3 sets(Test Set, Valid Set, Train Set). Then, repeat the above process.
 
 ### Step 5: Let's start to train!
