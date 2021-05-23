@@ -141,4 +141,5 @@ Evaluation information will be printed on the terminal.\
 4. Inference on webcam
    - I did not try this.
 
+# Last but not least, pack all your files and folders to a new folder. (Just for tidiness)
 # Thank you, and GOOD LUCK :)
