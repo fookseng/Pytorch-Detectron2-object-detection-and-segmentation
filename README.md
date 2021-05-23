@@ -63,18 +63,18 @@ An example for the image and corresponding annotation can be found in resources/
 #### Second: Register your dataset
 * Since we must register our dataset in Detectron2 in order to use it [see here](https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html).
 There are few methods to do it.
-##### Method 1: Convert annotations to COCO format dataset.(Fast and simple, highly recommended.)
+##### Method 1: Convert annotations to COCO Format dataset.(Fast and simple, highly recommended.)
 - A conversion tool is provided in my [Github](https://github.com/fookseng/annotation-converter).
 - After you have done the conversion, we are able to use the function 'register_coco_instances' to register our datasets easily (in Step 5).
 - A sample output file from the conversion can be found in resources/sample/sample.json [sample](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/sample/sample.json)
 ##### Method 2: Write your own function to register the dataset.(Not tested in this tutorial.)
 If you are using labelme, a sample code is provided for your reference(register_dataset.py).
 Credit to [Jadezzz](https://github.com/Jadezzz)
-#### Conclusion: In Step 4, we label our images using labelme. Then, we convert all the annotations to COCO Format annotation(sample.json). What we are doing:
+* #### Conclusion: In Step 4, we label our images using labelme. Then, we convert all the annotations to COCO Format(sample.json). What we are doing:
    1. Collect all your images, put them all together in a folder named 'img'.
    2. Label all the images using labelme, save the annotations in another folder named 'label'
-   3. To use the tool(convert labelme annotation to COCO Format annotation) mentioned above, we must put the images and annotations in the same folder. Hence, we create a new folder named 'coco', then, copy all the images and annotations from the folder 'img' and 'lable' respectively to the folder 'coco'.
-   4. Run the tool to do the conversion.
+   3. To use the tool(convert labelme annotation to COCO Format) mentioned above, we must have both the images and annotations in the same folder. Hence, we create a new folder named 'coco', then, copy all the images and annotations to the folder 'coco'.
+   4. Run the tool to do the conversion (using the folder 'coco').
    5. Now, we have obtained the COCO Format annotation file(sample.json). You may delete the folder 'coco'.
 
 ### Step 5: Let's start to train!
