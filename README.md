@@ -48,7 +48,7 @@ Download a copy of the .ipynb file, run it on Google Colab.
 ### Step 3: Test our installation
 1. Download a picture for testing purpose.\
    `~$ wget http://images.cocodataset.org/val2017/000000439715.jpg -q -O input.jpg`
-2. Run test_installation.py\
+2. Run 'test_installation.py'\
    _Please open the file(test_installation.py) with text editor, comment line25 `cfg.MODEL.DEVICE='cpu' `, if you do have a GPU available._\
 ` ~$ python3 test_installation.py`
 3. You will now see the original and predicted images like below. Press 'space' to terminate the program.
