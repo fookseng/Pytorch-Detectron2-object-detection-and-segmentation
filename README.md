@@ -11,20 +11,24 @@ Download a copy of the .ipynb file, run it on Google Colab.
 ### Step 1: Dealing with Anaconda (You may skip step 1, Anaconda is NOT compulsory.)
 * Install Anaconda, since we will use Anaconda to manage environments.\
 [How to install Anaconda](https://docs.anaconda.com/anaconda/install/linux/)
-* Open your terminal, create a new Python environment. ('We use the name'detectron2 here, any name should be fine).\
+* Open your terminal, create a new Python environment. (We named the environment 'detectron2').\
 `~$ conda create -n detectron2`
 * Activate the environment we have created.\
 `~$ conda activate detectron2`
 * If the above steps are successful, you will see something similar to this:\
-(detectron2) lemon@lemon-System-Product-Name:~$  * Note that "(detectron2)" has appeared. *
+`(detectron2) lemon@lemon-System-Product-Name:~$`
 
-### Step 2: Install Detectron2
+### Step 2: Install Detectron2 
 [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
 #### Method 1: Which I was using (recommended).
-1. ~$ cd Desktop (Change my current working directory to Desktop. You can change to any directory or remain the same.)
-2. ~$ git clone https://github.com/facebookresearch/detectron2.git
-3. ~$ python3 -m pip install -e detectron2
-4. ~$ ls (You will now see a folder called "detectron2" appeared in your directory(Desktop here).)
+1. Change my current working directory to Desktop. You can change to any directory other or remain the same.\
+`~$ cd Desktop `
+2. Clone the repository.\
+` ~$ git clone https://github.com/facebookresearch/detectron2.git`
+3. Install detectron2
+` ~$ python3 -m pip install -e detectron2`
+4. List the folders in current directory.You will now see a folder called "detectron2".\
+`~$ ls`
 #### Method 2:
 1. Check gcc version, since version >= 5.4 is needed.
    ~$ gcc --version
