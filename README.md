@@ -108,7 +108,9 @@ _You will first see 3 images displayed one by one(press 'space' to skip to the n
 ![training](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/train.png)
 
 ### Step 6: Open Tensorboard to display the performance.
-~$ tensorboard --logdir output
+First, open a new terminal, type the following command.\
+`~$ tensorboard --logdir output`
+
  
 
 ### Step 7: Evaluate and Inference
