@@ -2,6 +2,7 @@
 #### In this tutotial, we are going to detect and segment shrimp, shrimp's tail and shrimp's head in a picture.
 ![Example](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/detection_result/res2.jpg)
 Furthermore, we may use the above results to further calculate the size of shrimp(length, width, area).
+The complete dataset used in this tutorial will NOT be provided, please prepare your owm dataset.
 # A Step-by-step guide to Pytorch Detectron2 with custom dataset
 # Environments:
 1. Google Colab (strongly recommended, .ipynb file is provided.)
