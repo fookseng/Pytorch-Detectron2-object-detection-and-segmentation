@@ -5,7 +5,7 @@ Furthermore, we may use the above results to further calculate the size of shrim
 # A Step-by-step guide to Pytorch Detectron2 with custom dataset
 # Environments:
 1. Google Colab (strongly recommended, .ipynb file is provided.)
-2. Ubuntu (We will use in this tutorial.)
+2. Ubuntu (Demo in this tutorial.)
 
 ## For Google Colab:
 Download a copy of the .ipynb file, run it on Google Colab.
