@@ -109,7 +109,7 @@ Open the file 'train.py' with text editor. We are going to modify some settings.
 Save the file, and now, let's start our training. Run the file 'train.py'.\
 `~$ python3 train.py`
 
-_You will first see 3 images displayed one by one(press 'space' to skip to the next one). This is to confirm we have registered our dataset correctly. After the 3rd image displayed, the training process will start._\
+_You will first see 3 images displayed one by one(press 'space' to skip to the next one). This is to confirm that we have registered our dataset correctly. After the 3rd image displayed, the training process will begin._\
 ![training](https://github.com/fookseng/Pytorch-Detectron2-object-detection-and-segmentation/blob/main/resources/train.png)
 --------------------------------------------------------------------------------------------------------------------
 ### Step 6: Open Tensorboard to display the performance.
