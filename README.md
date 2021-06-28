@@ -24,8 +24,8 @@ Download a copy of the .ipynb file, run it on Google Colab.
 --------------------------------------------------------------------------------------------------------------------
 ### Step 2: Install Detectron2 
 [How to install Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
-#### Method 1: Which I was using (recommended).
-1. Change the current working directory to Desktop. You can change to any other directory or remain the same.\
+#### Method 1: (recommended).
+1. Change the current working directory to Desktop. You can switch to any directory or remain the same.\
 `~$ cd Desktop `
 2. Clone the repository.\
 ` ~$ git clone https://github.com/facebookresearch/detectron2.git`
